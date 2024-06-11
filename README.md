@@ -23,17 +23,18 @@ The data used in this project is sourced from publicly available datasets contai
 
 ## Data Cleaning Process
 
-1. **Inspect the Data:** Initial exploration of the dataset.
-2. **Identify and Remove Duplicates:** Locate and delete duplicate records.
-3. **Handle Missing Values:** Identify missing data and fill gaps appropriately.
-4. **Standardize Data:** Correct errors in data entries and ensure consistency in data formatting.
+1. **Inspect the Data:** Used `SELECT` statements to explore the initial dataset.
+2. **Identify and Remove Duplicates:** Used `GROUP BY` and `HAVING` clauses to find duplicates, and `ROW_NUMBER()` window function to remove them.
+3. **Handle Missing Values:** Utilized `UPDATE` statements to fill in missing values based on specific conditions.
+4. **Standardize Data:** Applied `UPDATE` and `ALTER TABLE` statements to correct errors and ensure consistency in data formatting.
 
 ## Exploratory Data Analysis
 
-1. **Land and Water Area by State:** Analyze the total land and water area by state.
-2. **Top States by Land and Water Area:** Identify the top 10 states by land and water area.
-3. **Income Correlation:** Examine the relationship between household income and other variables.
-4. **Average and Median Income Analysis:** Identify states and types of places with the highest and lowest average and median incomes.
+1. **Land and Water Area by State:** Analyzed the total land and water area by state using `SUM` and `GROUP BY` clauses.
+2. **Top States by Land and Water Area:** Identified the top 10 states by land and water area using `ORDER BY` and `LIMIT` clauses.
+3. **Income Correlation:** Examined the relationship between household income and other variables using `INNER JOIN` and `RIGHT JOIN` statements.
+4. **Average and Median Income Analysis:** Identified states and types of places with the highest and lowest average and median incomes using `AVG`, `ROUND`, and `ORDER BY` clauses.
+
 
 ## Challenges and Insights
 
@@ -50,8 +51,8 @@ The data used in this project is sourced from publicly available datasets contai
 
 ## Findings and Improvements
 
-1. **Lowest Average Income States:** Puerto Rico has the lowest average income at $27,841.7 per year, followed by Mississippi at $49,385 per year, Arkansas, West Virginia, and Alabama.
-2. **Highest Average Income States:** Columbia has the highest average income at $90,668 per year, followed by Connecticut, New Jersey, Maryland, and Massachusetts.
+1. **Lowest Average Income States:** Puerto Rico has the lowest average income at $27,841.7 per person per year, followed by Mississippi at $49,385 per person per year, Arkansas, West Virginia, and Alabama.
+2. **Highest Average Income States:** Columbia has the highest average income at $90,668 per person per year, followed by Connecticut, New Jersey, Maryland, and Massachusetts.
 3. **Highest Median Income State:** New Jersey is the highest median income state at $126,772.7 per person per year, followed by Wyoming, Alaska, Connecticut, and Massachusetts.
 4. **Lowest Median Income State:** Puerto Rico is the lowest median income state at $22,522.4 per person per year.
 5. **Income by Place Type:** Municipality has the highest average income but lacks sufficient representation with only one city. Urban and Community types have significantly lower incomes compared to City, Track, and Municipality types.
