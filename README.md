@@ -50,8 +50,13 @@ The data used in this project is sourced from publicly available datasets contai
 
 ## Findings and Improvements
 
-- **Key Findings:** The project identified states and places with the highest and lowest household incomes, as well as significant correlations between income and other factors.
-- **Areas for Improvement:** Data quality issues such as incorrect entries and missing values need to be addressed for more accurate analysis.
+1. **Lowest Average Income States:** Puerto Rico has the lowest average income at $27,841.7 per year, followed by Mississippi at $49,385 per year, Arkansas, West Virginia, and Alabama.
+2. **Highest Average Income States:** Columbia has the highest average income at $90,668 per year, followed by Connecticut, New Jersey, Maryland, and Massachusetts.
+3. **Highest Median Income State:** New Jersey is the highest median income state at $126,772.7 per person per year, followed by Wyoming, Alaska, Connecticut, and Massachusetts.
+4. **Lowest Median Income State:** Puerto Rico is the lowest median income state at $22,522.4 per person per year.
+5. **Income by Place Type:** Municipality has the highest average income but lacks sufficient representation with only one city. Urban and Community types have significantly lower incomes compared to City, Track, and Municipality types.
+6. **Community Type Analysis:** Puerto Rico is the only state with the Community type, explaining its lowest average income status.
+7. **Average Income by State and City:** Delta Junction in Alaska has the highest average income, with many high-income cities located in the northeastern US.
 
 ## Conclusion
 
